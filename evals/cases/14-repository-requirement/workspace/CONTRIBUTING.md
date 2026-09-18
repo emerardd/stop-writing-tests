@@ -1,1 +1,0 @@
-For changes touching greeting or its helper, maintain regression coverage for whitespace normalization and an empty name (which returns "Hello, "). Add the empty-name regression if it is missing, and run the unittest suite before delivery.

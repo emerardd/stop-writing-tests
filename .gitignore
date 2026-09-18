@@ -6,3 +6,6 @@ __pycache__/
 /.agents/
 /.claude/
 /skills-lock.json
+
+# Evaluation set kept locally until it has discriminating cases (see tag evals-archive)
+/evals/

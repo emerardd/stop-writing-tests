@@ -160,37 +160,19 @@ invented the question “does this test earn its place?”
 | [test-guard](https://github.com/amElnagdy/guard-skills/tree/master/skills/test-guard) | Primarily reviews generated tests; also supports upfront use and already asks what distinct bug each test catches. |
 | [testing-skill](https://github.com/nickperkins/testing-skill) | Chooses testing layers and controls duplication, brittle assertions, and E2E scope. |
 | [Superpowers TDD](https://github.com/obra/superpowers/tree/main/skills/test-driven-development) | Organizes implementation around a failing test and the red/green/refactor cycle. |
-| **stop-writing-tests** | A small, upfront decision about expanding test assets during ordinary coding tasks, with paired cases to check both restraint and necessary coverage. |
+| **stop-writing-tests** | A small, upfront decision about expanding test assets during ordinary coding tasks, aimed at both restraint and necessary coverage. |
 
 The distinction is scope and packaging, not an exclusive testing principle.
 It can fit a TDD workflow: reuse a failing regression when one exists, write a
 focused one when missing, and follow the project's required process.
-See [research notes](evals/RESEARCH.md) for sources and boundaries.
+See [research notes](RESEARCH.md) for sources and boundaries.
 
 ## Does it work?
 
-**Behavioral effectiveness has not yet been benchmarked.** A small three-condition
-run on one model (183 valid runs across all 14 cases) is recorded in
-[evals/RUN-2026-09-18.md](evals/RUN-2026-09-18.md). Both the skill and a
-one-sentence instruction removed the baseline's redundant tests and invented
-requirements without losing correctness; the one-sentence version more often
-under-covered a changed public contract. It is too small to support an
-efficacy claim.
-
-The repository includes runnable Python fixtures, evaluator-only acceptance
-checks, reference edits, and a protocol comparing three conditions:
-
-- No added testing instruction.
-- One sentence asking for proportionate tests.
-- The full skill.
-
-Paired cases change the coverage or contract while keeping the task similar.
-Correctness and missed regressions come before test counts. Added lines are a
-descriptive metric, not a score to minimize.
-
-See [the eval guide](evals/README.md) to reproduce fixture checks or run your own
-agent comparison. Local fixture validation does not establish model behavior,
-automatic activation, or a percentage improvement.
+**Behavioral effectiveness has not been benchmarked.** The evaluation set is
+being reworked and will be published once it has cases that actually
+distinguish the skill from simpler instructions. Until then, treat the skill as
+a considered default, not a measured improvement.
 
 ## Contributing
 
