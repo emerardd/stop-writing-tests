@@ -16,8 +16,7 @@ npx skills add emerardd/stop-writing-tests
 ```
 
 Requires Node.js/npm. Follow the prompts to choose your agent and installation
-scope. The GitHub command requires the repository to be published. To try a
-downloaded or cloned copy locally, run
+scope. To try a downloaded or cloned copy locally, run
 `npx skills add . --skill stop-writing-tests` from this repository's root.
 
 Then use it in Codex:

@@ -17,12 +17,10 @@ Python 3.12.10 for smoke checks and the authoring validator, Git Bash 5.2.37.
 | Overwrite protection | Passed | Existing run directories and review reports are not silently replaced. Invalid case selection is rejected. |
 | README installation snippets | Passed in PowerShell and Git Bash for both agent paths | Copied skill bytes match the source and a second install preserves the existing target. Smoke checks used isolated substitute home directories, not personal settings. |
 | Skills CLI 1.6.0 local discovery | Passed | `npx skills add . --list` found exactly one skill, `stop-writing-tests`. The check used a workspace-local npm cache; no skill was installed. |
+| Skills CLI 1.7.0 GitHub install (2026-09-18) | Passed | After publishing, `npx skills add emerardd/stop-writing-tests --list` found exactly one skill, and `npx skills add emerardd/stop-writing-tests --agent codex claude-code --copy -y` installed it into a fresh project's `.agents/skills/` and `.claude/skills/`. Both copies are byte-identical to `skills/stop-writing-tests/SKILL.md`. Project scope only; the interactive prompts, default symlink mode, and `--global` were not exercised. |
 | Relative documentation links | Passed | Repository-relative links resolve to existing files. |
 
 ## Not established
-
-- GitHub installation from `emerardd/stop-writing-tests` has not been tested;
-  it requires the repository to be published.
 
 - No model ran the three-condition comparison. There are no efficacy percentages,
   measured token savings, or claims of unchanged task accuracy.
