@@ -169,10 +169,13 @@ See [research notes](evals/RESEARCH.md) for sources and boundaries.
 
 ## Does it work?
 
-**Behavioral effectiveness has not yet been benchmarked.** A first small pilot
-(8 cases, 3 conditions, 2 repetitions, one model) is recorded in
-[evals/PILOT-2026-09-18.md](evals/PILOT-2026-09-18.md). It is too small to support
-an efficacy claim.
+**Behavioral effectiveness has not yet been benchmarked.** A small three-condition
+run on one model (183 valid runs across all 14 cases) is recorded in
+[evals/RUN-2026-09-18.md](evals/RUN-2026-09-18.md). Both the skill and a
+one-sentence instruction removed the baseline's redundant tests and invented
+requirements without losing correctness; the one-sentence version more often
+under-covered a changed public contract. It is too small to support an
+efficacy claim.
 
 The repository includes runnable Python fixtures, evaluator-only acceptance
 checks, reference edits, and a protocol comparing three conditions:

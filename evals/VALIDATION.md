@@ -22,11 +22,12 @@ Python 3.12.10 for smoke checks and the authoring validator, Git Bash 5.2.37.
 
 ## Not established
 
-- No adequately powered model comparison has been run. A first pilot exists
-  ([PILOT-2026-09-18.md](PILOT-2026-09-18.md)): 8 of 14 cases, three conditions,
-  two repetitions, one model, reviewed unblinded by the harness operator. It
-  establishes that the protocol runs end to end. It does not establish an
-  efficacy percentage, measured token savings, or unchanged task accuracy.
+- No adequately powered model comparison has been run. A pilot
+  ([PILOT-2026-09-18.md](PILOT-2026-09-18.md)) and a follow-up run across all 14
+  cases ([RUN-2026-09-18.md](RUN-2026-09-18.md), 183 valid runs of 210 planned)
+  used one model and were reviewed unblinded by the harness operator. They do
+  not establish an efficacy percentage, measured token savings, or unchanged
+  task accuracy.
 - Codex and Claude Code native skill discovery and implicit activation were not
   exercised. Paths and invocation are documented from official sources; copy
   validation alone does not prove host behavior.

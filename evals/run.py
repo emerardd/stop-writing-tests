@@ -45,6 +45,12 @@ def digest(mapping):
     return value.hexdigest()
 
 
+def lines(data):
+    if data is None:
+        return []
+    return data.decode("utf-8", errors="replace").replace("\r\n", "\n").splitlines(keepends=True)
+
+
 def case_path(name):
     path = CASES / name
     if path.parent != CASES or not (path / "case.json").is_file():
@@ -122,10 +128,11 @@ def inspect_run(args):
     changes = []
     diff = []
     for name in sorted(before.keys() | after.keys()):
-        if before.get(name) == after.get(name):
+        # Normalize line endings so an editor rewriting LF as CRLF does not
+        # count as rewriting every line.
+        old, new = lines(before.get(name)), lines(after.get(name))
+        if old == new and (name in before) == (name in after):
             continue
-        old = before.get(name, b"").decode("utf-8", errors="replace").splitlines(keepends=True)
-        new = after.get(name, b"").decode("utf-8", errors="replace").splitlines(keepends=True)
         added = removed = 0
         for tag, i, j, k, l in difflib.SequenceMatcher(a=old, b=new, autojunk=False).get_opcodes():
             if tag != "equal":
