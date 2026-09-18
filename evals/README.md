@@ -186,6 +186,7 @@ separately. Nothing in this repository guarantees unconditional host enforcement
 
 ## Current evidence
 
-See [VALIDATION.md](VALIDATION.md) for local fixture and packaging checks.
-There are no measured model-comparison results yet. Please do not turn the README's
+See [VALIDATION.md](VALIDATION.md) for local fixture and packaging checks, and
+[PILOT-2026-09-18.md](PILOT-2026-09-18.md) for a first underpowered three-condition
+pilot. There is no adequately powered model comparison yet. Please do not turn the README's
 illustrative example into an efficacy claim.

@@ -22,8 +22,11 @@ Python 3.12.10 for smoke checks and the authoring validator, Git Bash 5.2.37.
 
 ## Not established
 
-- No model ran the three-condition comparison. There are no efficacy percentages,
-  measured token savings, or claims of unchanged task accuracy.
+- No adequately powered model comparison has been run. A first pilot exists
+  ([PILOT-2026-09-18.md](PILOT-2026-09-18.md)): 8 of 14 cases, three conditions,
+  two repetitions, one model, reviewed unblinded by the harness operator. It
+  establishes that the protocol runs end to end. It does not establish an
+  efficacy percentage, measured token savings, or unchanged task accuracy.
 - Codex and Claude Code native skill discovery and implicit activation were not
   exercised. Paths and invocation are documented from official sources; copy
   validation alone does not prove host behavior.

@@ -167,7 +167,10 @@ See [research notes](evals/RESEARCH.md) for sources and boundaries.
 
 ## Does it work?
 
-**Behavioral effectiveness has not yet been benchmarked.**
+**Behavioral effectiveness has not yet been benchmarked.** A first small pilot
+(8 cases, 3 conditions, 2 repetitions, one model) is recorded in
+[evals/PILOT-2026-09-18.md](evals/PILOT-2026-09-18.md). It is too small to support
+an efficacy claim.
 
 The repository includes runnable Python fixtures, evaluator-only acceptance
 checks, reference edits, and a protocol comparing three conditions:
