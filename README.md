@@ -1,5 +1,7 @@
 # stop-writing-tests
 
+![A three-line code change on one side, a mountain of generated test files on the other](assets/hero.webp)
+
 **Your agent changed 3 lines. Why did it write 300 lines of tests?**
 
 A small agent skill that makes every new test earn its place.
