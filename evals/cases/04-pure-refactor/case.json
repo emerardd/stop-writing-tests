@@ -1,0 +1,11 @@
+{
+  "baseline_suite_passes": true,
+  "baseline_acceptance_passes": true,
+  "expected_test_decision": "reuse",
+  "manual_review": [
+    "Verify the requested refactor actually happens.",
+    "No new behavior or coverage gap is introduced; avoid a new parameter matrix."
+  ],
+  "oracle_scope": "Behavioral subset only. Review task completion, test value, protection, and transcript separately.",
+  "reference_tests_fail_on_baseline": false
+}

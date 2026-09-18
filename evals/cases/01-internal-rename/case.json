@@ -1,0 +1,11 @@
+{
+  "baseline_suite_passes": true,
+  "baseline_acceptance_passes": true,
+  "expected_test_decision": "reuse",
+  "manual_review": [
+    "Verify the helper and its call site were renamed.",
+    "Existing greeting coverage exercises the helper; no extra test or compatibility API is needed."
+  ],
+  "oracle_scope": "Behavioral subset only. Review task completion, test value, protection, and transcript separately.",
+  "reference_tests_fail_on_baseline": false
+}

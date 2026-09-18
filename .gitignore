@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+/.eval-runs/
+
+# Local installs of this skill into the repo itself
+/.agents/
+/.claude/
+/skills-lock.json

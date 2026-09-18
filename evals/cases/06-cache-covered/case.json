@@ -1,0 +1,11 @@
+{
+  "baseline_suite_passes": false,
+  "baseline_acceptance_passes": false,
+  "expected_test_decision": "reuse",
+  "manual_review": [
+    "Fix the expiration boundary and preserve unexpired reads.",
+    "Use the already failing regression; do not duplicate it."
+  ],
+  "oracle_scope": "Behavioral subset only. Review task completion, test value, protection, and transcript separately.",
+  "reference_tests_fail_on_baseline": true
+}

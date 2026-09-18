@@ -1,0 +1,11 @@
+{
+  "baseline_suite_passes": true,
+  "baseline_acceptance_passes": true,
+  "expected_test_decision": "reuse",
+  "manual_review": [
+    "Preserve both grants and the denial invariant; confirm the simplification.",
+    "Existing tests cover all policy outcomes. Do not add tests for private branching structure."
+  ],
+  "oracle_scope": "Behavioral subset only. Review task completion, test value, protection, and transcript separately.",
+  "reference_tests_fail_on_baseline": false
+}

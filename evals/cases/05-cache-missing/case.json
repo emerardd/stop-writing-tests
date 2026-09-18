@@ -1,0 +1,11 @@
+{
+  "baseline_suite_passes": true,
+  "baseline_acceptance_passes": false,
+  "expected_test_decision": "add-focused",
+  "manual_review": [
+    "Fix the expiration boundary and preserve unexpired reads.",
+    "Add durable boundary coverage that fails on the original > comparison; a manual check alone is insufficient."
+  ],
+  "oracle_scope": "Behavioral subset only. Review task completion, test value, protection, and transcript separately.",
+  "reference_tests_fail_on_baseline": true
+}
