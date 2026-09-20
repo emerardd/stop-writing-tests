@@ -1,6 +1,6 @@
 ---
 name: stop-writing-tests
-description: Prevent unnecessary test growth during coding tasks. Use when fixing bugs, refactoring, renaming, changing configuration, or adding behavior, before deciding whether to add or expand tests. Identify worthwhile coverage gaps, reuse existing verification, and keep necessary regression coverage.
+description: Keep coding agents from bloating test suites with redundant tests while preserving meaningful regression coverage. Use before adding or expanding tests during bug fixes, refactors, renames, configuration changes, and feature work. Reuse existing evidence when it is sufficient; add the smallest focused test only for a grounded behavior or risk gap.
 license: MIT
 ---
 
